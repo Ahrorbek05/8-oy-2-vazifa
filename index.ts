@@ -114,6 +114,17 @@ let raqamLength: number = (raqam as string).length;
 console.log(raqamLength)
 
 // 5.
+// Boolean sifatida o'zgartirish
+let booleanValue: string | boolean;
+booleanValue = "true";
+let isTrue: boolean = (booleanValue as unknown as boolean);
+console.log(isTrue);
+
+// 6.
+// Object sifatida  o'zgartirish
+let object: any = { name: "John", age: 30 }
+let person: { name: string, age: number } = object as { name: string, age: number }
+console.log(person.name, person.age)
 
 
 
