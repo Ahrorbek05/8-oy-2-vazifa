@@ -53,3 +53,44 @@ console.log(kitobHaqidaMalumot(kitob1));
 console.log(kitobHaqidaMalumot(kitob2));
 console.log("Topilgan kitob:", topilganKitob);
 console.log("Mavjud kitoblar soni:", kutubxona.mavjudKitoblarSoni());
+// Qo'shimcha masalalar //
+// 1.
+// Har xil turdagi ma'lumotlarni saqlash
+function Qiymati(value) {
+    console.log(value);
+}
+Qiymati(5);
+Qiymati("Hello");
+Qiymati(true);
+// 2.
+// O'zgaruvchini any sifatida belgilash
+let TasodifiyQiymat;
+TasodifiyQiymat = 10;
+console.log(TasodifiyQiymat);
+TasodifiyQiymat = "TypeScript";
+console.log(TasodifiyQiymat);
+TasodifiyQiymat = [1, 2, 3];
+console.log(TasodifiyQiymat);
+// 3.
+// String sifatida o'zgartirish
+let qiymat;
+qiymat = "Salom TypeScript!";
+let stringLength = qiymat.length;
+console.log(stringLength);
+// 4.
+// Number sifatida o'zgartirish
+let raqam;
+raqam = "123";
+let raqamLength = raqam.length;
+console.log(raqamLength);
+// 5.
+// Boolean sifatida o'zgartirish
+let booleanValue;
+booleanValue = "true";
+let isTrue = booleanValue;
+console.log(isTrue);
+// 6.
+// Object sifatida  o'zgartirish
+let object = { name: "John", age: 30 };
+let person = object;
+console.log(person.name, person.age);
